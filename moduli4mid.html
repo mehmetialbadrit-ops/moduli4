@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Photo Gallery</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>My Photo Gallery</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#gallery">Gallery</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- First section: Responsive image -->
+        <section id="home">
+            <h2>Featured Photo</h2>
+
+            <picture>
+                <source
+                    media="(min-width: 1200px)"
+                    srcset="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1200&q=80"
+                >
+                <source
+                    media="(min-width: 600px)"
+                    srcset="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=800&q=80"
+                >
+                <img
+                    src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=500&q=80"
+                    alt="Beautiful landscape with mountains and a lake"
+                    width="800"
+                >
+            </picture>
+        </section>
+
+        <!-- Second section: Bookmarks -->
+        <section id="gallery">
+            <h2>My Favourite Topics</h2>
+
+            <ul>
+                <li><a href="#nature">Nature</a></li>
+                <li><a href="#travel">Travel</a></li>
+                <li><a href="#photography">Photography</a></li>
+            </ul>
+
+            <h3 id="nature">Nature</h3>
+            <p>Photos and information about beautiful natural landscapes.</p>
+
+            <h3 id="travel">Travel</h3>
+            <p>Memories and interesting places from around the world.</p>
+
+            <h3 id="photography">Photography</h3>
+            <p>My favourite photography ideas, techniques, and subjects.</p>
+        </section>
+    </main>
+
+</body>
+</html>
